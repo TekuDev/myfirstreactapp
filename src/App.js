@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { comments } from "./commentData";
+import Card from "./Card";
 
 function App() {
   return (
@@ -18,7 +20,12 @@ function App() {
           Learn React
         </a>
       </header>
+    <div>
+      {comments.map((comment) => (
+        <Card commentObject={comment} />
+      ))}
     </div>
+  </div>
   );
 }
 
