@@ -2,7 +2,9 @@ import React from "react";
 
 function Body(props) {
   return (
-    <p>{props.comment}</p>
+    <div className="body">
+        <p>{props.comment}</p>
+    </div>
   );
 }
 
